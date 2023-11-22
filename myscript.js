@@ -21,6 +21,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let timeLeft = 30;
 let timerInterval;
+start.addEventListener("click", startQuiz);
 
 function startQuiz() {
   document.getElementById("start-button").style.display = "none";
@@ -90,5 +91,3 @@ function endQuiz() {
     <p>Score Percentage: ${scorePercentage}%</p>
   `;
 }
-
-start.addEventListener("click", startQuiz);
